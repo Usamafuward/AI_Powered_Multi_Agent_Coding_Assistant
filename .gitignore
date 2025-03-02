@@ -3,3 +3,4 @@
 .sesskey
 icons.py
 __pycache__/
+/vector_db
