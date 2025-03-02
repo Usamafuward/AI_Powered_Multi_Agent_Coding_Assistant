@@ -42,7 +42,7 @@ def get_main_layout():
         # Header
         Header(
             Div(
-                H1("AI-Powered Multi-Agent Coding Assistant", cls="text-2xl font-bold text-white"),
+                H1("AI-Powered Multi-Agent Coding Assistant", cls="text-2xl font-bold text-white text-center"),
                 cls="container mx-auto px-4 py-6"
             ),
             cls="bg-zinc-900 shadow-md"
@@ -78,7 +78,7 @@ def get_main_layout():
                                 Textarea(
                                     placeholder="Enter your coding prompt here...",
                                     id="code-prompt",
-                                    cls="w-full p-4 bg-zinc-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    cls="w-full min-h-[200px] p-4 bg-zinc-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 ),
                                 Button(
                                     "Generate Code",
@@ -93,7 +93,7 @@ def get_main_layout():
                                     H2("Generated Code", cls="text-xl font-bold text-white"),
                                     Pre(
                                         Code(id="generated-code", cls="text-sm text-white"),
-                                        cls="p-4 bg-zinc-800 rounded-lg mt-4"
+                                        cls="p-4 bg-zinc-800 rounded-lg mt-4 overflow-auto max-h-96"
                                     ),
                                     cls="mt-6"
                                 ),
@@ -126,7 +126,7 @@ def get_main_layout():
                                     H2("Debugged Code", cls="text-xl font-bold text-white"),
                                     Pre(
                                         Code(id="debugged-code", cls="text-sm text-white"),
-                                        cls="p-4 bg-zinc-800 rounded-lg mt-4"
+                                        cls="p-4 bg-zinc-800 rounded-lg mt-4 overflow-auto max-h-96"
                                     ),
                                     cls="mt-6"
                                 ),
@@ -159,7 +159,7 @@ def get_main_layout():
                                     H2("Optimized Code", cls="text-xl font-bold text-white"),
                                     Pre(
                                         Code(id="optimized-code", cls="text-sm text-white"),
-                                        cls="p-4 bg-zinc-800 rounded-lg mt-4"
+                                        cls="p-4 bg-zinc-800 rounded-lg mt-4 overflow-auto max-h-96"
                                     ),
                                     cls="mt-6"
                                 ),
